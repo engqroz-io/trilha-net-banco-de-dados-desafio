@@ -119,7 +119,7 @@ SELECT Ano, Count(1) as "Quantidade"
 ```sql
 SELECT Id, PrimeiroNome, UltimoNome, Genero
   FROM dbo.Atores
- WHERE Genero = "M";
+ WHERE Genero = 'M';
 ```
 
 ## 9 - Buscar os Atores do gênero feminino, retornando o PrimeiroNome, UltimoNome, e ordenando pelo PrimeiroNome
@@ -129,7 +129,7 @@ SELECT Id, PrimeiroNome, UltimoNome, Genero
 ```sql
 SELECT Id, PrimeiroNome, UltimoNome, Genero
   FROM dbo.Atores
- WHERE Genero = "F"
+ WHERE Genero = 'F'
  ORDER BY PrimeiroNome;
 ```
 
@@ -156,7 +156,7 @@ SELECT f.Nome, g.Genero
   JOIN dbo.FilmesGenero fg
     ON f.Id = fg.IdFilme
   join dbo.Generos g
-    ON g.Id = fg.IdGenero;
+    ON g.Id = fg.IdGenero
  WHERE lower(g.Genero) = 'mistério'
 ```
 
