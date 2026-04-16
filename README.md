@@ -109,7 +109,7 @@ SELECT Nome, Ano, Duracao
 ```sql
 SELECT Ano, Count(1) as "Quantidade"
   FROM dbo.Filmes
- GROUP BY Ano;
+ GROUP BY Ano DESC;
 ```
 
 ## 8 - Buscar os Atores do gênero masculino, retornando o PrimeiroNome, UltimoNome
